@@ -1,0 +1,490 @@
+*{
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+	list-style: none;
+	font-family: 'Poppins', sans-serif;
+
+}
+.glow {
+    font-size: 80px;
+    color: #fff;
+    text-align: center;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+  }
+
+.parallax {
+    background: url("images/1.jpg");
+    min-height: 630px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .parallax1 {
+    background: url("images/1.jpg");
+    height: 130px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+   .parallax2 {
+    background: url("images/1.jpg");
+    height: 300px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .parallax3 {
+    background: url("images/1.jpg");
+    height: 80px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+header h1 {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    letter-spacing: 5px;
+    font-size: 4em;
+    line-height: 1em;
+}
+header h6 {
+    color: #D0C9C0;
+    margin: 0;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    letter-spacing: 15px;
+}
+.navbar{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    transition: top 0.6s;
+	position:fixed;
+	z-index: 1;
+    background-color: #73777b;
+    transition: top 0.6s;
+    
+}
+.menu ul{
+	float: right;
+}
+.menu ul li{
+    display: inline-block;
+	list-style: none;
+}
+.menu ul li a{
+	text-decoration: none;
+	color: white;
+	padding: 5px 12px;
+	letter-spacing: 2px;
+	font-size: 18px;
+    font-weight: bolder;
+}
+.menu ul li a:hover{
+	transition: 0.4s;
+	letter-spacing: 3px;
+    color: #31546c;
+    border-bottom: 2px solid #F66B0E;
+    font-weight: bolder;
+} 
+.contact-section{
+    background-color: #523775;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    height: 450px;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+}
+  
+.contact-info{
+	color: #fff;
+	max-width: 500px;
+	line-height: 65px;
+	padding-left: 0px;
+	font-size: 18px;
+}
+  
+.contact-info i{
+	margin-right: 20px;
+	font-size: 25px;
+}
+  
+.contact-form{
+	max-width: 700px;
+	margin-right: 50px;
+}
+  
+.contact-info, .contact-form{
+	flex: 1;
+}
+  
+.contact-form h2{
+	color: #fff;
+	text-align: center;
+	font-size: 35px;
+	margin-bottom: 30px;
+}
+.contact-form .text-box{
+	background: #000;
+	color: #fff;
+	border: none;
+	width: calc(50% - 10px);
+	height: 50px;
+	padding: 12px;
+	font-size: 15px;
+	border-radius: 5px;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+	margin-bottom: 20px;
+	opacity: 0.7;
+}
+  
+.contact-form .text-box:first-child{
+	margin-right: 15px;
+}
+  
+.contact-form textarea{
+	background: #000;
+	color: #fff;
+	border: none;
+	width: 100%;
+	padding: 12px;
+	font-size: 15px;
+	min-height: 200px;
+	max-height: 400px;
+	resize: vertical;
+	border-radius: 5px;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+	margin-bottom: 20px;
+	opacity: 0.7;
+}
+  
+.contact-form .send-btn{
+    background: none;
+    border: 2px solid #205375;
+	float: right;
+	color: #fff;
+	width: 120px;
+	height: 40px;
+	font-size: 15px;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 6px;
+	border-radius: 5px;
+	cursor: pointer;
+	transition-property: background;
+}
+  
+.contact-form .send-btn:hover{
+    border: none;
+    background: #205375;
+    letter-spacing: 4px;
+    border-radius: 10px;
+    transition: 0.6s;
+	
+}
+.projects
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #523775;
+    flex-wrap: wrap;
+    width: 100%;
+    transform-style: preserve-3d;
+}
+.container
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+}
+.projects .box
+{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin: 40px;
+    background: #232323;
+    border-radius: 20px;
+    transform-style: preserve-3d;
+    box-shadow: 0 2px 5px #ac93b8,0 0 10px #ff4da6;
+}
+.projects .box::before
+{
+    content: 'f4t';
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 4em;
+    font-weight: 900;
+    color: #fff;
+    font-style: italic;
+    opacity: 0;
+    transition: 0.6s;
+}
+.projects .box::after
+{
+    content: 'c4t';
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 4em;
+    font-weight: 900;
+    color: #fff;
+    font-style: italic;
+    opacity: 0;
+    transition: 0.6s;
+}
+.projects .box:hover::before,
+.projects .box:hover::after
+{
+    opacity: 0.04;
+}
+.projects .box .name
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    transform-style: preserve-3d;
+    transform: translate3d(0,0,75px);
+    transition: 0.6s;
+    opacity: 0;
+    z-index: 10;
+}
+.projects .box:hover .name
+{
+    top: 40px;
+    opacity: 1;
+}
+.projects .box .product
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width: 300px;
+    transition: 1s;
+    z-index: 11;   
+    transition: 1s;
+    transform-style: preserve-3d;
+    transform: translate3d(-50%,-50%,0px);
+    opacity: 0;
+}
+.projects .box:hover .product
+{
+    transition: 1s;
+    opacity: 1;
+}
+.projects .box .number
+{
+    font-size: 6em;
+    font-weight: 900;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transition: 0.6s;
+    max-width: 300px;
+    transition: 0.6s;
+    z-index: 11;
+    transform-style: preserve-3d;
+    transform: translate3d(-50%,-50%,0px);
+    opacity: 0.04;
+}
+.projects .box:hover .number
+{
+    transition: 0.6s;
+    opacity: 0;
+}
+.projects .box .visit
+{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform-style: preserve-3d;
+    transform: translate3d(-50%,0,75px);
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #205375;
+    border-radius: 10px;
+    padding: 10px 25px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.6s;
+    opacity: 0;
+    z-index: 10;
+    cursor: pointer;
+}
+.projects .box .visit:hover
+{
+    background-color: #205375;
+    border-radius: 15px;
+    letter-spacing: 1px;
+    transition: 0.5s;
+}
+.projects .box:hover .visit
+{
+    bottom: 30px;
+    opacity: 1;
+}
+@media only screen and (max-width:700px)
+{
+    .navbar ul{
+        width: 100%;
+        right: 0;
+        z-index: 2;
+    }
+    header h6 {
+        color: #D0C9C0;
+        top: 60%;
+        left: 50%;
+        letter-spacing: 10px;
+    }
+    .glow {
+        font-size: 60px;
+        color: #fff;
+        text-align: center;
+        animation: glow 1s ease-in-out infinite alternate;
+      }
+      .contact-info{
+        color: #fff;
+        max-width: 500px;
+        line-height: 65px;
+        padding-left: 0px;
+        font-size: 12px;
+    }
+      
+    .contact-info i{
+        margin-right: 20px;
+        font-size: 20px;
+    }
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+}
+/* Button used to open the chat form - fixed at the bottom of the page */
+.open-button {
+    background-color: #232323;
+    color: white;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px #ac93b8,0 0 10px #ff4da6;
+  }
+  
+  /* The popup chat - hidden by default */
+  .chat-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    background-color: #688394a2;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+    border-radius: 20px;
+  }
+  
+  /* Add styles to the form container */
+  .form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: transparent;
+  }
+  
+  /* Full-width textarea */
+  .form-container textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: rgba(0, 0, 0, 0.596);
+    resize: none;
+    min-height: 200px;
+    border-radius: 10px;
+  }
+  
+  /* When the textarea gets focus, do something */
+  .form-container textarea:focus {
+    background-color: rgb(0, 0, 0);
+    color: #f1f1f1;
+    outline: none;
+    border-radius: 10px;
+    min-height: 201px;
+    transition: 0.3s;
+  }
+  /* Set a style for the submit/send button */
+  .form-container .btn {
+    background-color: transparent;
+    color: white;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+    width: 28%;
+    border: 4px solid white;
+    margin-bottom:10px;
+    border-radius: 20px;
+    opacity: 0.8;
+  } 
+  /* Add some hover effects to buttons */
+  .form-container .btn:hover, .open-button:hover .submit{
+    background-color: #31546c;
+    width: 30%;
+    letter-spacing: 1px;
+    opacity: 1;
+    transition: 0.6s;
+  }
+  .form-container h1
+  {
+      font-size: 40px;
+  }
+ .form-container label
+ {
+     letter-spacing: 6px;
+     color: #f1f1f1;
+     font-size: 10px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+ .open-button
+ {
+     font-size: 20px;
+ }
